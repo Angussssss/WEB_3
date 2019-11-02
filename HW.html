@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>網頁</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- Main css -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- 網頁抬頭選單 -->
+    <header>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
+            <div class="container">
+                <!-- LOGO -->
+                <a href="#" class="navbar-brand">
+                    <img src="images/Tescom.jpg" alt="logo" />
+                </a>
+                <!-- 手機選單漢堡按鈕 -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+          <!-- 漢堡ICON -->
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+                <!-- 選單內容 -->
+                <div id="navbar-collapse" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li><a href="#product" class="nav-link">產品</a></li>
+                        <li><a href="#creative" class="nav-link">功能</a></li>
+                        <li><a href="#activity" class="nav-link">售價</a></li>
+                        <li><a href="#standard" class="nav-link">規格</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 可以輪播的Banner圖片 -->
+    <section id="product">
+        <div id="carousel-controller" class="carousel slide" data-ride="carousel">
+            <!-- 輪播圖片 -->
+            <div class="carousel-inner">
+                <!-- 圖片1 -->
+                <div class="carousel-item active">
+                    <img class="w-100" src="images/Hairdryer.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h1>白鑽限定</h1>
+                        <p>大風量 負離子吹風機</p>
+                    </div>
+                </div>
+                <!-- 圖片2 -->
+                <div class="carousel-item">
+                    <img class="w-100" src="images/Hairdryer2.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h1>高效速乾</h1>
+                        <p>負離子吹風機</p>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- 圖片上一頁按鈕 -->
+            <a href="#carousel-controller" data-slide="prev" class="carousel-control-prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <!-- 圖片下一頁按鈕 -->
+            <a href="#carousel-controller" data-slide="next" class=" carousel-control-next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+
+            <!-- 下方點點 -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-controller" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-controller" data-slide-to="1"></li>
+                <li data-target="#carousel-controller" data-slide-to="2"></li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- 影片 -->
+    <!-- <section class="container-fluid video-area" id="video">
+        <div class="video-container">
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/mNBxwGghQAY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section> -->
+
+    <!-- 產品介紹區塊(創意) -->
+    <section id="creative" class="creative_area">
+        <div class="container">
+            <h2 class="text-center">
+                
+            </h2>
+            <!-- 產品照片 -->
+            <div class="row">
+                <!-- 照片組1 -->
+                <div class="col">
+                    <div class="card">
+                        <a href="#"><img alt="產品照片1" src="images/Function.jpg">
+                            <div class="card-title-wrap">
+                                <span class="card-title">三段式風力調節</span>
+                                <span class="card-text"></span>
+                            </div>
+                            <div class="pic-hover">
+                                <h4>大風量負離子吹風機。</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- 照片組2 -->
+                <div class="col">
+                    <div class="card">
+                        <a href="#"><img alt="產品照片2" src="images/Function.jpg">
+                            <div class="card-title-wrap">
+                                <span class="card-title">三段式風力調節</span>
+                                <span class="card-text"></span>
+                            </div>
+                            <div class="pic-hover">
+                                <h4>大風量負離子吹風機。</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- 照片組3 -->
+                <div class="col">
+                    <div class="card">
+                        <a href="#"><img alt="產品照片3" src="images/Function.jpg">
+                            <div class="card-title-wrap">
+                                <span class="card-title">三段式風力調節</span>
+                                <span class="card-text"></span>
+                            </div>
+                            <div class="pic-hover">
+                                <h4>大風量負離子吹風機。</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 商品文案 -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="article_text">
+                    <!-- <h3>日常的家常</h3>
+                    <p>每天上午 第一顆太陽蛋</br>
+                        下班回家 來一鍋蔬菜湯</br>
+                        料理食材簡單</br>
+                        下廚卻如此複雜…
+                    </p>
+                    <h3>定義廚藝新時尚</h3>
+                    <p>可拆式把手設計</br>
+                        鍋具餐具二合一</br>
+                        圓弧流線造型</br>
+                        好收納好清潔
+                    </p>
+                    <h1>halla malmo</h1>
+                    <p>生活的設計感 設計的生活感</br>
+                        給您兼顧機能與風格用品
+                    </p> -->
+                    <p>
+                        <p>・速乾! 超級大風量1.6Ｍ³/分</p>
+                        <p>・4處黃金負離子釋放超強保濕</p>
+                        <p>・雙氣流風罩設計造型輕鬆吹</p>
+                        <p>・溫控護理防止秀髮高溫傷害</p>
+                        <p>・​風溫指示燈與折疊貼心設計</p> 
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 背景影片 -->
+        <div class="container">
+            <video autoplay muted loop id="myVideo">
+        <source src="images/Tescom.jpg" type="video/mp4">
+      </video>
+        </div>
+    </section>
+
+    <!-- 商品促銷活動區塊 -->
+    <section id="activity" class="activity_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="images/Function3.jpg">
+                </div>
+
+                <div class="col-md-4 activity_price text-center">
+                    <h2>售價： <span>999</span>元</h2>
+                    
+                    
+                </div>
+
+                <div class="col-md-4">
+                    <!-- <img src="images/activity_img2.jpg"> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 規格 -->
+    <section id="standard" class="standard_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <table class="table table-hover">
+                        <tr>
+                            <h5 scope="col">規格說明：</h5>
+                        </tr>
+                        <tbody>
+                            <tr>
+                                <th scope="row">中英文品名：</th>
+                                <td>TESCOM強力速乾負離子吹風機</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">產品型號：</th>
+                                <td>TID960TW</td>
+                            </tr>
+                            <!-- <tr> -->
+                                <th scope="row">電源：</th>
+                                <td colspan="2">AC 110V 60Hz</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">消耗電量：</th>
+                                <td colspan="2">1400W (3-TURBO) / 630W (1-SET)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">熱風溫度：</th>
+                                <td colspan="2">11５℃ 環境溫度30℃ 2-熱時的溫度</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">電源線長度：</th>
+                                <td colspan="2">1.7m</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">重量：</th>
+                                <td colspan="2">520g (主機) / 570g (裝上風罩時)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">附屬配件：</th>
+                                <td colspan="2">雙氣流風罩</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">安全裝置：</th>
+                                <td colspan="2">防過熱裝置 (溫控器、溫度保險絲)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">尺寸：</th>
+                                <td colspan="2">長287x寬181x高84mm (主機)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">保固：</th>
+                                <td colspan="2">原廠保固一年，附保固證書一張</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <table class="table">
+                        <tr>
+                            <h5 scope="col">安全注意事項：</h5>
+                        </tr>
+                        <ul class="standard_use">
+                            <li>使用後請務必將開關推至「OFF」，並自插座拔除電源插頭。</li>
+                            <li>使用消耗電量為1000W以上的電器時，請獨立直接連接額定電流15A以上的插座。</li>
+                            <li>請務必使用110V交流電。（台灣國內專用）</li>
+                           <li>請勿毀損電源線。使用時請勿過度彎折、扭轉、拉扯、重壓、靠近熱源、夾壓、改造或捆綁。</li>
+                           <li>開關開啟後請勿閒置。 請勿放置於耐熱度低的物品上， 例如棉被、紙類等易燃物或塑膠袋等。</li>
+                           <li>請勿放任孩童單獨使用。不可用於嬰幼兒。 請勿於幼兒周遭使用。請勿存放於幼兒伸手可及之處。</li>
+                           <li>請勿於易燃物（汽油、揮發油、稀釋劑、瓦斯、髮膠等）附近使用。</li>
+                           <li>使用時，請小心避免毛髮捲入風口。</li>
+                           <li>安裝或拆卸配件時，請待吹風機完全冷卻後再進行。</li>
+                        </ul>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 貼心提醒 -->
+    <section>
+        <div class="container content">
+            <div class="row remind">
+                <h4>售後服務</h4>
+                <div class="w-100"></div>
+                <!-- <p>使用時請留意：</p> -->
+                <ul>
+                    <li> 關於保固書／保固期限為購買日起一年內。</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁腳 -->
+    <footer class="footer">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-12 footer_logo">
+                    <img src="images/Tescom.jpg">
+                </div>
+                <div class="col-md-4 col-sm-12 footer_address">
+                    <ul>
+                        <li>專 線：0800-255-123</li>
+                        <li>服務時間：週一至週五上午9點~下午5點</li>
+                        <li>服務信箱：TESCOM@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row footer_copyright justify-content-center">
+                <p>COPYRIGHT © 2019 TESCOM .ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src=" https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+    </script>
+
+    <script src="js/back_top.js"></script>
+</body>
+
+</html>
